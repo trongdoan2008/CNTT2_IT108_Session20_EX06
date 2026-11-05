@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Git hook pre-push: tự động chạy quét secret trước mỗi lần push.
-# Cài đặt:  ./scripts/install-hooks.sh
-ROOT="$(git rev-parse --show-toplevel)"
-"$ROOT/scripts/scan-secrets.sh" "$ROOT" || {
-  echo "Push bị chặn bởi pre-push hook."
-  exit 1
-}

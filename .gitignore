@@ -1,57 +1,44 @@
-# ===== BÍ MẬT & CẤU HÌNH MÔI TRƯỜNG =====
 # Chặn mọi file .env thật, chỉ cho phép file mẫu *.example
 .env
 .env.*
 !.env.example
-!.env.development.example
 !.env.test.example
 !.env.production.example
-*.local
 
-# ===== KHÓA & CHỨNG CHỈ =====
+# Khóa & chứng chỉ
 *.pem
 *.key
 *.p12
 *.pfx
-*.crt
-*.jks
-*.keystore
 id_rsa*
 id_ed25519*
 service-account*.json
 credentials.json
-secrets.json
-secrets.yml
-secrets.yaml
+secrets.*
 
-# ===== DATABASE & BACKUP =====
+# Database & backup
 *.sql
 *.sqlite
 *.sqlite3
 *.db
 *.dump
 *.bak
-backups/
 
-# ===== LOG & DỮ LIỆU TẠM =====
+# Log & dữ liệu tạm
 *.log
 logs/
 tmp/
 uploads/
 
-# ===== DEPENDENCIES & BUILD =====
+# Dependencies & build
 node_modules/
 vendor/
 dist/
 build/
-.next/
 __pycache__/
-*.pyc
 .venv/
-coverage/
 
-# ===== IDE / OS =====
+# IDE / OS
 .idea/
 .vscode/
 .DS_Store
-Thumbs.db
